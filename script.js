@@ -1,10 +1,8 @@
-// Масив для зберігання даних
+
 let crossings = [
     { id: 1, name: 'Іваненко Іван Іванович', date: '2024-11-18', country: 'Польща' },
     { id: 2, name: 'Петренко Петро Петрович', date: '2024-11-19', country: 'Угорщина' },
 ];
-
-// Функція для відображення даних у таблиці
 function renderTable() {
     const tableBody = document.querySelector('#crossingTable tbody');
     tableBody.innerHTML = ''; // Очищуємо таблицю
@@ -27,7 +25,7 @@ function renderTable() {
     });
 }
 
-// Функція для додавання нового запису
+
 function addEntry(event) {
     event.preventDefault();
 
@@ -36,26 +34,26 @@ function addEntry(event) {
     const country = document.getElementById('country').value;
 
     const newEntry = {
-        id: Date.now(), // Унікальний ідентифікатор
+        id: Date.now(), 
         name,
         date,
         country,
     };
 
-    crossings.push(newEntry); // Додаємо запис у масив
-    renderTable(); // Оновлюємо таблицю
+    crossings.push(newEntry); 
+    renderTable(); 
 
-    // Очищуємо форму
+    
     event.target.reset();
 }
 
-// Функція для видалення запису
+
 function deleteEntry(id) {
     crossings = crossings.filter(crossing => crossing.id !== id);
     renderTable();
 }
 
-// Функція для редагування запису
+
 function editEntry(id) {
     const entry = crossings.find(crossing => crossing.id === id);
 
@@ -73,10 +71,10 @@ function editEntry(id) {
     }
 }
 
-// Додаємо обробник для форми
+
 document.getElementById('addForm').addEventListener('submit', addEntry);
 
-// Ініціалізація таблиці
+
 renderTable();
 function toggleMenu() {
     const menu = document.getElementById('menu');
