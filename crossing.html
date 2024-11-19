@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Облік перетину</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+            <ul id="menu">
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="about.html">Про нас</a></li>
+                <li><a href="crossing.html">Облік перетину</a></li>
+                <li><a href="contacts.html">Контакти</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h1>Облік перетину</h1>
+        <table id="crossingTable">
+            <thead>
+                <tr>
+                    <th>№</th>
+                    <th>ПІБ</th>
+                    <th>Дата перетину</th>
+                    <th>Країна</th>
+                    <th>Дії</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Рядки будуть динамічно додаватися за допомогою JavaScript -->
+            </tbody>
+        </table>
+
+        <h2>Додати новий запис</h2>
+        <form id="addForm">
+            <label>
+                ПІБ: <input type="text" id="name" required>
+            </label>
+            <label>
+                Дата перетину: <input type="date" id="date" required>
+            </label>
+            <label>
+                Країна: <input type="text" id="country" required>
+            </label>
+            <button type="submit">Додати</button>
+        </form>
+    </main>
+    <footer>
+        <p>© 2024 Перетин державного кордону</p>
+    </footer>
+</body>
+</html>
