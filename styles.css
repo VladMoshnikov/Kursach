@@ -1,4 +1,4 @@
-/* Основні стилі */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -96,7 +96,7 @@ footer {
     transition: 0.3s;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
-/* Таблиця */
+
 table {
     width: 80%;
     margin: 20px auto;
@@ -140,7 +140,7 @@ td {
     color: #333;
 }
 
-/* Кнопки */
+
 button {
     padding: 5px 10px;
     margin: 2px;
@@ -217,7 +217,7 @@ form input {
     list-style: disc;
     margin-bottom: 5px;
 }
-/* Контакти */
+
 .contacts-container {
     display: flex;
     flex-wrap: wrap;
@@ -279,7 +279,7 @@ form input {
 .contact-card a:hover {
     text-decoration: underline;
 }
-/* Основні стилі для адаптації */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -298,7 +298,7 @@ header ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap; /* Робить меню адаптивним */
+    flex-wrap: wrap; 
     padding: 0;
     margin: 0;
 }
@@ -330,7 +330,7 @@ footer {
     padding: 10px 0;
 }
 
-/* Загальні стилі для таблиць */
+
 table {
     width: 100%;
     border-collapse: collapse;
@@ -360,7 +360,7 @@ table tr:hover {
     background: #cce5ff;
 }
 
-/* Загальні медіа-запити для адаптації */
+
 @media (max-width: 768px) {
     header ul {
         flex-direction: column;
@@ -392,7 +392,7 @@ table tr:hover {
         font-size: 0.9rem;
     }
 }
-/* Навігаційне меню */
+
 header {
     background: #0056b3;
     color: white;
@@ -427,7 +427,7 @@ header ul li a:hover {
     text-decoration: underline;
 }
 
-/* Гамбургер-меню для телефонів */
+
 .menu-toggle {
     display: none;
     font-size: 1.5rem;
@@ -439,7 +439,7 @@ header ul li a:hover {
     flex-direction: row;
 }
 
-/* Адаптація для мобільних пристроїв */
+
 @media (max-width: 768px) {
     .menu-toggle {
         display: block;
@@ -475,7 +475,7 @@ header ul li a:hover {
 }
 
 .news article {
-    flex: 1 1 calc(30% - 20px); /* Три новини в рядок для великих екранів */
+    flex: 1 1 calc(30% - 20px); 
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -485,7 +485,7 @@ header ul li a:hover {
 }
 
 .news article:hover {
-    transform: scale(1.03); /* Легке збільшення при наведенні */
+    transform: scale(1.03); 
 }
 
 .news img {
@@ -511,23 +511,23 @@ header ul li a:hover {
     text-align: justify;
 }
 
-/* Адаптація для мобільних пристроїв */
+
 @media (max-width: 768px) {
     .news article {
-        flex: 1 1 calc(50% - 20px); /* Дві новини в рядок для планшетів */
+        flex: 1 1 calc(50% - 20px); 
     }
 }
 
 @media (max-width: 480px) {
     .news article {
-        flex: 1 1 100%; /* Одна новина в рядок для телефонів */
+        flex: 1 1 100%; 
     }
 
     .news-content h3 {
-        font-size: 1rem; /* Зменшення заголовка */
+        font-size: 1rem; 
     }
 
     .news-content p {
-        font-size: 0.85rem; /* Зменшення тексту */
+        font-size: 0.85rem; 
     }
 }
